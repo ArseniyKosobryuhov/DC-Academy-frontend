@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DC Academy frontend</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="form" name="form">
+        <span class="form-title">Задать вопрос</span>
+        <div class="form-group">
+          <input
+            class="form-group__input"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Фамилия Имя Отчество *"
+            data-rule="name"
+            data-invalid-message="Укажите ФИО"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            class="form-group__input"
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Телефон *"
+            data-rule="phone"
+            data-invalid-message="Укажите номер"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            class="form-group__input"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
+        </div>
+        <button class="form-button" type="submit">ОТПРАВИТЬ ЗАПРОС</button>
+      </form>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
